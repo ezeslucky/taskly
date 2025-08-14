@@ -273,7 +273,7 @@ class ApiTool(Tool):
 
         # if there is a file upload, remove the Content-Type header
         # so that httpx can automatically generate the boundary header required for multipart/form-data.
-        # issue: https://github.com/langgenius/dify/issues/13684
+        # issue: https://github.com/ezeslucky/taskly/issues/13684
         # reference: https://stackoverflow.com/questions/39280438/fetch-missing-boundary-in-multipart-form-data-post
         if files:
             headers.pop("Content-Type", None)

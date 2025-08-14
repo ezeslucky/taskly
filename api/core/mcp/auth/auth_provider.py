@@ -36,7 +36,7 @@ class OAuthClientProvider:
             grant_types=["authorization_code", "refresh_token"],
             response_types=["code"],
             client_name="Dify",
-            client_uri="https://github.com/langgenius/dify",
+            client_uri="https://github.com/ezeslucky/taskly",
         )
 
     def client_information(self) -> Optional[OAuthClientInformation]:
